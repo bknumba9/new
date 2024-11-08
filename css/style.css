@@ -59,3 +59,37 @@ section form button{
     color: white;
     cursor: pointer;
 }
+
+.container{
+    width: 700px;
+    margin: 0 auto;
+}
+
+header ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+header ul li{
+    margin-left: 20px;
+    font-size: 1,6rem;
+}
+
+.gallerie{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.gallerie article{
+    width: 32%;
+    margin-bottom: 20px;
+}
+
+.gallerie article img{
+    width: 100%;
+}
+
+.gallerie article h2{
+    flex:1;
+}
