@@ -1,18 +1,40 @@
-/*reset*/
-
-h1, p, figure, ul, li{
+/* Reset */
+h1, p, figure, ul, li {
     margin: 0;
     padding: 0;
 }
 
-body{
+body {
     font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
-ul, li {
-    list-style: none;
+/* Container principal */
+.container {
+    width: 700px;
+    margin: 0 auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
+/* Header */
+header ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+header ul li {
+    margin-left: 20px;
+    font-size: 1.6rem;
+}
+
+/* Section principale */
 section {
     width: 700px;
     margin: 0 auto;
@@ -20,11 +42,7 @@ section {
     justify-content: space-between;
 }
 
-section .col1 {
-    width: 48%;
-}
-
-section .col2 {
+section .col1, section .col2 {
     width: 48%;
 }
 
@@ -34,6 +52,7 @@ section .col2 ul {
     margin: 10px 0;
 }
 
+/* Formulaire */
 form {
     display: flex;
     flex-direction: column;
@@ -41,55 +60,46 @@ form {
 
 section form * {
     margin: 15px 0;
-    padding: 8px;
-}
-
-section form *{
-    margin: 15px 0;
     padding: 8px 4px;
     border: 1px solid blue;
 }
 
-section form textarea{
+section form textarea {
     height: 80px;
 }
 
-section form button{
+section form button {
     background: blue;
     color: white;
     cursor: pointer;
 }
 
-.container{
-    width: 700px;
-    margin: 0 auto;
-}
-
-header ul {
-    display: flex;
-    justify-content: flex-end;
-}
-
-header ul li{
-    margin-left: 20px;
-    font-size: 1,6rem;
-}
-
-.gallerie{
+/* Galerie */
+.gallerie {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-.gallerie article{
+.gallerie article {
     width: 32%;
     margin-bottom: 20px;
 }
 
-.gallerie article img{
+.gallerie article img {
     width: 100%;
 }
 
-.gallerie article h2{
-    flex:1;
+.gallerie article h2 {
+    flex: 1;
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
 }
